@@ -1,0 +1,39 @@
+@(active: String, size: Option[Int] = None)
+<div class="col-md-3">
+  <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Connect to systems</a>
+  <div class="box box-solid">
+    <div class="box-header with-border">
+      <h3 class="box-title">Environments</h3>
+      <div class="box-tools">
+        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+      </div>
+    </div>
+    <div class="box-body no-padding">
+      <ul class="nav nav-pills nav-stacked">
+        <li @if(active == "servers") {class="active"}><a href="@routes.Application.index()"><i class="fa fa-server"></i> Servers <span class="label label-primary pull-right">@size.getOrElse(0)</span></a></li>
+        <li @if(active == "profiles") {class="active"}><a href="@routes.Application.profiles()"><i class="fa fa-users"></i> Profiles <span class="label label-primary pull-right">3</span></a></li>
+        <li @if(active == "environments") {class="active"}><a href="@routes.Application.environments()"><i class="fa fa-cubes"></i> Environments <span class="label label-primary pull-right">3</span></a></li>
+        <li @if(active == "keys") {class="active"}><a href="@routes.Application.keys()"><i class="fa fa-key"></i> Keys <span class="label label-primary pull-right">6</span></a></li>
+      </ul>
+    </div><!-- /.box-body -->
+  </div><!-- /. box -->
+  <div class="box box-solid">
+    <div class="box-header with-border">
+      <h3 class="box-title">Tools</h3>
+      <div class="box-tools">
+        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+      </div>
+    </div>
+    <div class="box-body no-padding">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i>Add server</a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i>Add profile</a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i>Add environment</a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i>Add key</a></li>
+
+        <!-- <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li> -->
+      </ul>
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+</div><!-- /.col -->

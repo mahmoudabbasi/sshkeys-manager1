@@ -1,0 +1,56 @@
+@()
+@main("SSH Key manager") {
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+
+
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      @menu("environments")
+      <div class="col-md-9">
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <h3 class="box-title">Environments <small>(A group of servers)</small></h3>
+            <div class="box-tools pull-right">
+              <div class="has-feedback">
+                <input type="text" class="form-control input-sm" placeholder="Search systems">
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+              </div>
+            </div><!-- /.box-tools -->
+          </div><!-- /.box-header -->
+          <div class="box-body no-padding">
+
+            <div class="table-responsive">
+              <table class="table table-hover table-striped">
+                <tbody>
+                  <tr>
+                    <td><a href="">Lunatech AWS</a></td>
+                    <td>(parabola.lunatech.com, artifactory.lunatech.com, barrel.lunatech.com, babylon.lunatech.com)</td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="">Acceptance UPS</a></td>
+                    <td>(files.acceptance.elogistics.net, app1.acceptance.elogistics.net, messaging.acceptance.elogistics.net)</td>
+
+                  </tr>
+                  <tr>
+                    <td><a href="">Production UPS</a></td>
+                    <td>(files.elogistics.net, app1.elogistics.net, messaging.elogistics.net, kate-node1.elogistics.net, kate-node2.elogistics.net, artifactory.elogistics.net)</td>
+
+
+                  </tr>
+                </tbody>
+              </table><!-- /.table -->
+            </div><!-- /.mail-box-messages -->
+          </div><!-- /.box-body -->
+          <div class="box-footer no-padding">
+
+          </div>
+        </div><!-- /. box -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </section><!-- /.content -->
+}

@@ -1,0 +1,81 @@
+@()
+@main("SSH Key manager") {
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="margin-left:0px">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+
+
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            @menu("keys")
+            <div class="col-md-9">
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Keys <small>(SSH key that identifies a user)</small></h3>
+                  <div class="box-tools pull-right">
+                    <div class="has-feedback">
+                      <input type="text" class="form-control input-sm" placeholder="Search systems">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                  </div><!-- /.box-tools -->
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+
+                  <div class="table-responsive mailbox-messages">
+                    <table class="table table-hover table-striped">
+                      <tbody>
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Nicolas's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net (admin), files.elogistics.net (admin), app1.elogistics.net (admin), app1.acceptance.elogistics.net (admin), messaging.elogistics.net (admin)</td>
+
+                        </tr>
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Erik's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net, files.elogistics.net, app1.elogistics.net, app1.acceptance.elogistics.net, messaging.elogistics.net </td>
+
+                        </tr>
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Martin's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net, files.elogistics.net, app1.elogistics.net, app1.acceptance.elogistics.net, messaging.elogistics.net </td>
+
+                        </tr>
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Michel's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net, files.elogistics.net, app1.elogistics.net, app1.acceptance.elogistics.net, messaging.elogistics.net </td>
+
+                        </tr>
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Fred's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net, files.elogistics.net, app1.elogistics.net, app1.acceptance.elogistics.net, messaging.elogistics.net </td>
+
+                        </tr>
+
+                        <tr>
+                          <td class="mailbox-name"><a href="read-mail.html">Jasper's key</a></td>
+                          <td>09:f0:3b:7d:a4:8a:30:75:ec:c1:28:4c:a9:8d:8c:0b</td>
+                          <td class="mailbox-subject"><a href="">files.acceptance.elogistics.net, files.elogistics.net, app1.elogistics.net, app1.acceptance.elogistics.net, messaging.elogistics.net </td>
+
+                        </tr>
+
+                      </tbody>
+                    </table><!-- /.table -->
+                  </div><!-- /.mail-box-messages -->
+                </div><!-- /.box-body -->
+                <div class="box-footer no-padding">
+
+                </div>
+              </div><!-- /. box -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section><!-- /.content -->
+      }
